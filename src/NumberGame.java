@@ -35,7 +35,7 @@ public class NumberGame
                 }
                 else if (guess == randomnumber)
                 {
-                    System.out.println("Congratulations! You Have Guessed The Correct Number In" + attempts + "Attempts");
+                    System.out.println("Congratulations! You Have Guessed The Correct Number In " + attempts + " Attempts");
                     score++;
                     break;
                 }
