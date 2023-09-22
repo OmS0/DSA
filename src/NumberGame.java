@@ -52,7 +52,7 @@ public class NumberGame
                     System.out.println("Sorry Atempts Over :( The Correct Answer Was: " + randomnumber);
                 }
             }
-            System.out.println("Do You Want To Play More ? (YES/NO) : ");
+            System.out.print("Do You Want To Play More ? (YES/NO) : ");
             String play = sc.next();
             if (!play.equalsIgnoreCase("YES"))
             {
