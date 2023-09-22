@@ -10,7 +10,7 @@ public class NumberGame
 
         int minrange = 1;
         int maxrange = 100;
-        int maxattempts = 5;
+        int maxattempts = 10;
         int score = 0;
 
         System.out.println("Welcome To The NUMBER GAME");
@@ -49,7 +49,7 @@ public class NumberGame
                 }
                 if (attempts == maxattempts)
                 {
-                    System.out.println("Sorry Atempts Over :(");
+                    System.out.println("Sorry Atempts Over :( The Correct Answer Was: " + randomnumber);
                 }
             }
             System.out.println("Do You Want To Play More ? (YES/NO) : ");
