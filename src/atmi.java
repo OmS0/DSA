@@ -99,7 +99,7 @@ class ATM
         BankAccount.Withdraw(Amount);
     }
 }
-public class atmI
+public class atmi
 {
     public static void main(String[] args)
     {
