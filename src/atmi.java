@@ -104,8 +104,8 @@ public class atmi
     public static void main(String[] args)
     {
         BankAccount Account = new BankAccount(10101);
-        ATM at = new ATM(Account);
-        at.PerformTransaction();
+        ATM atm = new ATM(Account);
+        atm.PerformTransaction();
     }
 }
 
