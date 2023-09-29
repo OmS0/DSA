@@ -35,7 +35,8 @@ class BankAccount
         }
     }
 }
-class ATM {
+class ATM
+{
     private BankAccount BankAccount;
     private Scanner sc;
     public ATM(BankAccount Account)
@@ -54,12 +55,14 @@ class ATM {
     public void PerformTransaction()
     {
         int Choice;
-        do {
+        do
+        {
             ShowMenu();
             System.out.print("Enter Your Choice: ");
             Choice = sc.nextInt();
 
-            switch (Choice) {
+            switch (Choice)
+            {
                 case 1:
                     CheckBalance();
                     break;
