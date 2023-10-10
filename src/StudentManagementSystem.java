@@ -30,11 +30,11 @@ public class StudentManagementSystem {
     private Scanner scanner = new Scanner(System.in);
 
     public void addStudent() {
-        System.out.print("Enter student name: ");
+        System.out.println("Enter student name:");
         String name = scanner.nextLine();
-        System.out.print("Enter student roll number: ");
+        System.out.println("Enter student roll number:");
         int rollNo = scanner.nextInt();
-        System.out.print("Enter student grade: ");
+        System.out.println("Enter student grade:");
         double grade = scanner.nextDouble();
 
         students s = new students(name, rollNo, grade);
@@ -47,7 +47,7 @@ public class StudentManagementSystem {
         if (studentsList.isEmpty()) {
             System.out.println("No students found.");
         } else {
-            System.out.println("List of Students-");
+            System.out.println("List of Students:");
             for (students s : studentsList) {
                 System.out.println("Name: " + s.getName());
                 System.out.println("Roll Number: " + s.getRollNo());
@@ -58,7 +58,7 @@ public class StudentManagementSystem {
     }
 
     public void removeStudent() {
-        System.out.print("Enter student roll number to remove: ");
+        System.out.println("Enter student roll number to remove:");
         int rollNo = scanner.nextInt();
 
         for (students s : studentsList) {
@@ -72,12 +72,12 @@ public class StudentManagementSystem {
     }
 
     public void searchStudent() {
-        System.out.print("Enter student roll number to search: ");
+        System.out.println("Enter student roll number to search:");
         int rollNo = scanner.nextInt();
 
         for (students s : studentsList) {
             if (s.getRollNo() == rollNo) {
-                System.out.println("Student found-");
+                System.out.println("Student found:");
                 System.out.println("Name: " + s.getName());
                 System.out.println("Roll Number: " + s.getRollNo());
                 System.out.println("Grade: " + s.getGrade());
@@ -99,7 +99,7 @@ public class StudentManagementSystem {
             System.out.println("3. Search Student");
             System.out.println("4. Display all Students");
             System.out.println("5. Exit");
-            System.out.print("Enter your choice: ");
+            System.out.println("Enter your choice: ");
             choice = scanner.nextInt();
 
             switch (choice) {
