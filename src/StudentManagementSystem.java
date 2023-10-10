@@ -31,7 +31,7 @@ public class StudentManagementSystem {
 
     public void addStudent() {
         System.out.println("Enter student name:");
-        String name = scanner.nextLine();
+        String name = scanner.next();
         System.out.println("Enter student roll number:");
         int rollNo = scanner.nextInt();
         System.out.println("Enter student grade:");
@@ -99,7 +99,7 @@ public class StudentManagementSystem {
             System.out.println("3. Search Student");
             System.out.println("4. Display all Students");
             System.out.println("5. Exit");
-            System.out.println("Enter your choice: ");
+            System.out.print("Enter your choice: ");
             choice = scanner.nextInt();
 
             switch (choice) {
